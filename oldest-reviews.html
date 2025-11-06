@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="all-reviews-style.css" />
+
+    <link rel="stylesheet" href="oldest-order.css" />
+
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>PHILikula</title>
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img src="movies-photo/logo.png" alt="Logo" class="logo-icon" />
+            </div>
+          </div>
+
+          <div class="head-right">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="#" title="OLDEST MOVIES">OLDEST MOVIES</a>
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="#" title="OLDEST MOVIES">OLDEST MOVIES</a>
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews-selection">
+        <div class="top-button">OLDEST MOVIE REVIEWS</div>
+
+        <div class="body-container">
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7R940b9RNNKLDrAI1GmCjOd5ta.jpg"
+              alt="HELLO, LOVE, AGAIN"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">HELLO, LOVE, AGAIN</p>
+
+              <p class="released-date">
+                <i>Released date: <br />November 13, 2024</i>
+              </p>
+
+              <a href="Hello, Love, Again.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sIdczpaO0XXBe6OEIL8NbWMqQrO.jpg"
+              alt="OUTSIDE"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">OUTSIDE</p>
+
+              <p class="released-date">
+                <i>Released date: <br />October 17, 2024</i>
+              </p>
+
+              <a href="Outside.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/e1eGvrYWTBp5ryznO0rYLwTpuWG.jpg"
+              alt="LOLO AND THE KID"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">LOLO AND THE KID</p>
+
+              <p class="released-date">
+                <i>Released date: <br />August 7, 2024</i>
+              </p>
+
+              <a href="Lolo and the Kid.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bXNKyqNjeGF2XxBpghFbySuM9se.jpg"
+              alt="GG (GOOD GAME)"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">GG (GOOD GAME)</p>
+
+              <p class="released-date">
+                <i>Released date: <br />January 24, 2024</i>
+              </p>
+
+              <a href="GG (Good Game).html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/2EG9dLNxHKyT5DEJxsprp0f4O9T.jpg"
+              alt="GOMBURZA"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">GOMBURZA</p>
+
+              <p class="released-date">
+                <i>Released date: <br />December 25, 2023</i>
+              </p>
+
+              <a href="GomBurZa.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fgV27uGi7kLj7BZp6dm21ggdtRt.jpg"
+              alt="LOVE YOU LONG TIME"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">LOVE YOU LONG TIME</p>
+
+              <p class="released-date">
+                <i>Released date: <br />April 8, 2023</i>
+              </p>
+
+              <a href="Love You Long Time.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3YC0cVq092rWZLp7DiWXo75GRCU.jpg"
+              alt="I LOVE LIZZY"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">I LOVE LIZZY</p>
+
+              <p class="released-date">
+                <i>Released date: <br />January 18, 2023</i>
+              </p>
+
+              <a href="I Love Lizzy.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5RmF0Hbotq206ofgb4ZgEBnQkC1.jpg"
+              alt="DELETER"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">DELETER</p>
+
+              <p class="released-date">
+                <i>Released date: <br />December 25, 2022</i>
+              </p>
+
+              <a href="Deleter.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pyLkGGbfkT3tySgN1n9ASqZjRlX.jpg"
+              class="movie-pic"
+              alt="AN INCONVENIENT LOVE"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">AN INCONVENIENT LOVE</p>
+
+              <p class="released-date">November 23, 2022</p>
+
+              <a href="An Inconvenience Love.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/plv85l002BHwPq7zvjceGt4h3nz.jpg"
+              alt="THE ENTITLED"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">THE ENTITLED</p>
+
+              <p class="released-date">
+                <i>Released date: <br />July 29, 2022</i>
+              </p>
+
+              <a href="The Entitled.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zzMvqwJaSPKkN5mkDQ0dLHJsPho.jpg"
+              alt="ARISAKA"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">ARISAKA</p>
+
+              <p class="released-date">
+                <i>Released date: <br />December 9, 2021</i>
+              </p>
+
+              <a href="Arisaka.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/v8ffx5ildKQv2i0PDuQ2SVYSnIE.jpg"
+              alt="MY AMANDA"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">MY AMANDA</p>
+
+              <p class="released-date">
+                <i>Released date: <br />July 15, 2021</i>
+              </p>
+
+              <a href="My Amanda.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hMYlI03yyJK8X0HseIIDaXHBlhc.jpg"
+              alt="QUEZON’S GAME "
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">QUEZON’S GAME</p>
+
+              <p class="released-date">
+                <i>Released date: <br />January 8, 2021</i>
+              </p>
+
+              <a href="Quezon_s Game.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sJFouUfCgHFSUh5OKVSQBSfrfA1.jpg"
+              alt="HELLO, LOVE, GOODBYE"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">HELLO, LOVE, GOODBYE</p>
+
+              <p class="released-date">
+                <i>Released date: <br />December 30, 2019</i>
+              </p>
+
+              <a href="Hello, Love, Goodbye.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cEQ5cxaMKyzUuqlcM3l5c1cyzn4.jpg"
+              alt="BABAE AT BARIL"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">BABAE AT BARIL</p>
+
+              <p class="released-date">
+                <i>Released date: <br />September 24, 2019</i>
+              </p>
+
+              <a href="Babae at Baril.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6D98XukeN3lJf5BJ4vEIcHMwu5n.jpg"
+              alt="CLARITA"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">CLARITA</p>
+
+              <p class="released-date">
+                <i>Released date: <br />July 26, 2019</i>
+              </p>
+
+              <a href="Clarita.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/duEI37Qjtt1WaiOzZzVlkI6JO2z.jpg"
+              alt="EERIE"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">EERIE</p>
+
+              <p class="released-date">
+                <i>Released date: <br />March 27, 2019</i>
+              </p>
+
+              <a href="Eerie.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8E9Tbz8X1xLdtpMU9rMhiUdWXZs.jpg"
+              alt="THE TRIGONAL: FIGHT FOR JUSTICE"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">
+                THE TRIGONAL: FIGHT FOR JUSTICE
+              </p>
+
+              <p class="released-date">
+                <i>Released date: <br />September 26, 2018</i>
+              </p>
+
+              <a
+                href="The Trigonal - Fight for Justice.html"
+                class="review-button"
+              >
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fZuIWrzsqoeVlyWBJIek8crGSFz.jpg"
+              alt="GOYO: THE BOY GENERAL"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">GOYO: THE BOY GENERAL</p>
+
+              <p class="released-date">
+                <i>Released date: <br />September 5, 2018</i>
+              </p>
+
+              <a href="Goyo.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vvArzms4uGDAlqo6JfeAe0b4ro4.jpg"
+              alt="BUYBUST"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">BUYBUST</p>
+
+              <p class="released-date">
+                <i>Released date: <br />August 1, 2018</i>
+              </p>
+
+              <a href="Buybust.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8EuKlaYo53CDFAKbxzkQ8r2bSUP.jpg"
+              alt="BIRDSHOT"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">BIRDSHOT</p>
+
+              <p class="released-date">
+                <i>Released date: <br />March 26, 2018</i>
+              </p>
+
+              <a href="Birdshot.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pKUEXWLEBxV7NnjIdr4yWzcuTUI.jpg"
+              alt="RESPETO"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">RESPETO</p>
+
+              <p class="released-date">
+                <i>Released date: <br />August 4, 2017</i>
+              </p>
+
+              <a href="Respeto.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/4JNrGsP7A20M6UUGRrHBieZI5Ch.jpg"
+              alt="HAUNTED MANSION"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">HAUNTED MANSION</p>
+
+              <p class="released-date">
+                <i>Released date: <br />December 25, 2015</i>
+              </p>
+
+              <a href="Haunted Mansion.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vCwbsgkdzpgTADyaa3g4jaWVAaR.jpg"
+              alt="HENERAL LUNA"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">HENERAL LUNA</p>
+
+              <p class="released-date">
+                <i>Released date: <br />September 9, 2015</i>
+              </p>
+
+              <a href="LunaRevs.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sZAi6bz8I31NrVPUAkza9qtxqZE.jpg"
+              alt="CRAZY BEAUTIFUL YOU"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">CRAZY BEAUTIFUL YOU</p>
+
+              <p class="released-date">
+                <i>Released date: <br />February 25, 2015</i>
+              </p>
+
+              <a href="Crazy Beautiful You.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hNNfUqbv1xExffJNExIjBwbQ5Iw.jpg"
+              alt="BONIFACIO: ANG UNANG PANGULO"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title">BONIFACIO: ANG UNANG PANGULO</p>
+
+              <p class="released-date">
+                <i>Released date: <br />December 25, 2014</i>
+              </p>
+
+              <a
+                href="Bonifacio - Ang Unang Pangulo.html"
+                class="review-button"
+              >
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hVW73ewS9OaOHsXsu7iulPJxm06.jpg"
+              alt="THE MISTRESS"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">THE MISTRESS</p>
+
+              <p class="released-date">
+                <i>Released date: <br />September 12, 2012</i>
+              </p>
+
+              <a href="The Mistress.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tER1Ru1Grl5r8SIgcykoFztFoNZ.jpg"
+              alt="REMINGTON AND THE CURSE OF THE ZOMBADINGS"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">
+                THE CURSE OF THE ZOMBADINGS
+              </p>
+
+              <p class="released-date">
+                <i>Released date: <br />August 31, 2011</i>
+              </p>
+
+              <a
+                href="Remington and the Curse of the Zombadings.html"
+                class="review-button"
+              >
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/okI1a173lwhkHPbabNqkxVbFyLF.jpg"
+              alt="THE WOMAN IN SEPTIC TANK"
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">THE WOMAN IN SEPTIC TANK</p>
+
+              <p class="released-date">
+                <i>Released date: <br />August 3, 2011</i>
+              </p>
+
+              <a href="The Woman in Septic Tank.html" class="review-button">
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+
+          <div class="movie-choice">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bXzssnpeDayG8D8EJubPYjqA8DI.jpg"
+              alt="KIMMY DORA: KAMBAL SA KIYEME "
+              class="movie-pic"
+            />
+
+            <div class="movie-info">
+              <p class="movie-title" id="long-text">
+                KIMMY DORA: KAMBAL SA KIYEME
+              </p>
+
+              <p class="released-date">
+                <i>Released date: <br />September 2, 2009</i>
+              </p>
+
+              <a
+                href="Kimmy Dora - Ang Kambal sa Kiyeme.html"
+                class="review-button"
+              >
+                <div class="review-button">READ REVIEW</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">Follow Us</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="movies-photo/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="movies-photo/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="movies-photo/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="movies-photo/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+    </div>
+
+    <script src="burger.js"></script>
+  </body>
+</html>

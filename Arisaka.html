@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema and explore its cultural and social significance with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques, Philippine culture, classic Filipino movies, contemporary Filipino cinema"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PHILiKula - Movie Review</title>
+    <link rel="stylesheet" href="other-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="perMoviecopy.css" />
+  </head>
+  <body>
+    <!-- main from ivan starts here-->
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img
+                src="PHILIKULAPHOTOS/logo.png"
+                alt="Logo"
+                class="logo-icon"
+              />
+            </div>
+          </div>
+
+          <div class="head-right" id="pasaway">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ivan head ends here -->
+
+      <!-- content starts here -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zzMvqwJaSPKkN5mkDQ0dLHJsPho.jpg"
+                alt="Arisaka Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">ARISAKA</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: December 9, 2021</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Maja Salvador
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Mon Confiado, Royce Cabrera,
+                Arthur Acuna, Adamos Archi, Michael Roy Jornales, Kiel
+                Rodriguez, Dylan Ray Talon, Pontri Bernardo, Shella Mae
+                Romualdo, Apollo Abraham, Arrian Labios</i
+              ></span
+            >
+            <h3 class="other-details1">
+              <span class="">GENRE:</span> &nbsp; Action & Thriller
+            </h3>
+            <h3 class="other-details">
+              <span class="">RATINGS:</span> &nbsp; 56% Critique Reviews, 55%
+              Audience Reviews
+            </h3>
+            <h3 class="other-details1">
+              <span class="">DIRECTOR:</span>&nbsp; Mikhail Red
+            </h3>
+            <h3 class="other-details">
+              <span class="">AUTHOR:</span>&nbsp; Mikhail Red & Anton Santamaria
+            </h3>
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >Follows a policewoman who has to retrace the route of the
+                Bataan Death March to escape her captors.
+              </i></span
+            ><br />
+
+            <!-- experiment -->
+            <button class="watch-trailer-btn">WATCH TRAILER</button>
+            <div class="modal" id="trailerModal">
+              <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <iframe
+                  id="youtubeVideo"
+                  src="https://www.youtube.com/embed/29_DR0aAk0o"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+ 
+            <!-- experiment -->
+          </div>
+        </div>
+      </div>
+      <!-- content ends here -->
+
+      <!-- critic and reviews -->
+      <div class="criticAndrevs-container">
+        <div class="reviews-tabs">
+          <button class="tab-button" id="top-critics-tab">
+            TOP CRITIC REVIEWS
+          </button>
+
+          <button class="tab-button" id="audience-revs-tab">
+            AUDIENCE REVIEWS
+          </button>
+        </div>
+        <div class="reviews-content">
+          <!-- Top Critic Reviews content -->
+          <div class="tab-content" id="top-critics-content">
+            <!-- critic 1 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Jessica Kiang</p>
+                <span class="company">Variety</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Perfectly functional, entirely forgettable film.
+                </p>
+                <br />
+                <a
+                  href="https://variety.com/2021/film/reviews/arisaka-review-1235107040/"
+                  class="link-revs"
+                  target="_blank"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- crituc 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Elizabeth Kerr</p>
+                <span class="company">Hollywood Reporter</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The prolific director mixes up his usual mayhem-based routine
+                  by marrying genre action with issues of inherited trauma and
+                  the marginalization of native peoples - unfortunately, to only
+                  moderate effect.
+                </p>
+                <br />
+                <a
+                  href="https://www.hollywoodreporter.com/movies/movie-reviews/arisaka-film-review-1235042157/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Rebecca Cherry</p>
+                <span class="company">Film Carnage</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  It’s still a concept that can work for a piece of entertaining
+                  cinema, but the filmmakers tried to bring through such a
+                  serious tone, without the story to back it up, that it can’t
+                  work as solely an action-thriller.
+                </p>
+                <br />
+                <a
+                  href="https://filmcarnage.com/2022/04/21/review-arisaka/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 4 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Jim McLenna</p>
+                <span class="company">GirlsWithGuns</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The heroine here, Mariano (Salvador), has to count as the
+                  baddest bitch I’ve seen in quite a long time. In terms of
+                  being a sheer, unstoppable force, she’s right up there with
+                  Jen from Revenge. There’s an absolute moral compass at play
+                  here, which combines a stoic refusal to harm the innocent,
+                  with utter ruthlessness when it comes to punishing the guilty.
+                </p>
+                <br />
+                <a
+                  href="https://girlswithguns.org/arisaka/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 5 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Archi Sengupta</p>
+                <span class="company">LeisureByte</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Arisaka is an action-adventure movie directed by Mikhail Red
+                  and stars Maja Salvador, Mon Confiado, and Art Acuña,
+                  alongside other cast members. The movie has a runtime of 95
+                  minutes.
+                </p>
+                <br />
+                <a
+                  href="https://www.leisurebyte.com/arisaka-2020-review-maja-salvador/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Audience Reviews content -->
+          <div class="tab-content" id="audience-revs-content">
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Sliceemdown</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Mikhail Red's offering in Arisaka can be chalked up as an
+                  almost cooked thriller that revels more in its chattiness and
+                  pacing issues and less in its potential. It's a piece that
+                  wants you to be invested in its gritty atmosphere and
+                  historical roots but somehow misses its mark some 30 minutes
+                  into the flick.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Kosmasp</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Well it can't be the horns, now can it? So no pun intended(?)
+                  ... Anyway, this is quite straightforward ... and I doubt
+                  there are too many surprises here for anyone watching. There
+                  are moments where the movie could have ... well "finished" ..
+                  as in the bad guys had a chance to end it. One way or the
+                  other ... but our main bad guy has something to say ... and he
+                  wants to finish the job he started.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">3xHCCH</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  7 out of 9 found this helpful. Was this review helpful? Sign
+                  in to vote.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Tokyo</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Reminiscent of the Hong Kong action movies of the 80s and 90s,
+                  although the gunfights aren't as "balletic". Incredible
+                  cinematography. Every scene looks amazing. Well acted all
+                  around, even if the characters are a bit one dimensional, they
+                  are still characters you will love and love to hate. I did
+                  have some issues with it but in face of how good it is, I can
+                  easily overlook those issues. Great effects (though they are
+                  graphic). Guessing it had a sizable budget. Hope to see more
+                  of Shella Mae Romualdo in the future. Fell in love with her
+                  right away. It was great to indigenous Filipino
+                  representation.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 5 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">CuddlyAsAPanda</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The first Phillipino film I've seen and one of the best films
+                  I've ever seen. A gripping story with great music and
+                  fascinating themes such as rampant police corruption,
+                  indigenous rights, and WW2 history.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- experimetn sa tab switching -->
+
+      <!-- footer starts here -->
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">FOLLOW US</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="PHILIKULAPHOTOS/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="PHILIKULAPHOTOS/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="PHILIKULAPHOTOS/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <!-- </a> -->
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="PHILIKULAPHOTOS/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+
+      <!-- footer ends here -->
+    </div>
+    <script src="burger.js"></script>
+    <script src="PHhomeScript.js"></script>
+  </body>
+</html>

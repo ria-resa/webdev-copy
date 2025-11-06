@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema and explore its cultural and social significance with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques, Philippine culture, classic Filipino movies, contemporary Filipino cinema"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PHILiKula - Movie Review</title>
+    <link rel="stylesheet" href="other-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="perGenre.css" />
+  </head>
+  <body>
+    <!-- main from ivan starts here-->
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img
+                src="PHILIKULAPHOTOS/logo.png"
+                alt="Logo"
+                class="logo-icon"
+              />
+            </div>
+          </div>
+
+          <div class="head-right" id="pasaway">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="#" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="#" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ivan head ends here -->
+
+      <div class="genre-title">COMEDY MOVIE REVIEWS</div>
+
+      <!-- 1st movie -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bXzssnpeDayG8D8EJubPYjqA8DI.jpg"
+                alt="KIMMY DORA: KAMBAL SA KIYEME  Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">KIMMY DORA: KAMBAL SA KIYEME</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: September 2, 2009</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Eugene Domingo
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Dingdong Dantes, Zanjoe
+                Marudo, Ariel Ureta, Miriam Quiambao, Baron Geisler, Gabby
+                Eigenmann, Archie Alemania, Leo Tialp, Philip Nolasco, Moi
+                Marcampo, Tess Antonio, Cathia Roque, Ross Villamil, Tyone
+                Rabago</i
+              ></span
+            >
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >Kimmy and Dora Go Dong Hae, who are identical twin sisters,
+                cannot be any more different from each other. Life turns out to
+                be even more complicated as the twins become rivals both in life
+                and in love.
+              </i></span
+            ><br />
+
+            <a href="Kimmy Dora - Ang Kambal sa Kiyeme.html"
+              ><button class="watch-trailer-btn">READ REVIEW</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd movie -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/plv85l002BHwPq7zvjceGt4h3nz.jpg"
+                alt="THE ENTITLED Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">THE ENTITLED</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: July 29, 2022</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Alex Gonzaga, JC De Vera
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Ara Mina, Johnny Revilla,
+                Melai Cantiveros, Andrea Abaya, Issa Litton, Tori Garcia,
+                Rolando Inocencio, Felix Petate, Skelly Clarkson, Kobie Brown,
+                Sela Guia, Zabel Lamberth, Louie Kim Sedukis, Marivic B. Ong, Ed
+                Delos Reyes, Humphrey Dela Cruz, Melinda Fabela, Vanny Fabela,
+                Bongjon Jose, Jorge Cabullo</i
+              ></span
+            >
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >Unexpectedly dropped into upper-class society, an awkward woman
+                struggles to fit in.
+              </i></span
+            ><br />
+
+            <a href="The Entitled.html"
+              ><button class="watch-trailer-btn">READ REVIEW</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 3rd movie -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/pyLkGGbfkT3tySgN1n9ASqZjRlX.jpg"
+                alt="AN INCONVENIENT LOVE Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">AN INCONVENIENT LOVE</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: November 23, 2022</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Belle Mariano, Donny
+              Pangilinan
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp;Tirso Cruz, JC Alcantara,
+                Jeffrey Quizon, Matet De Leon, Adrian Lindayag, Iana Bernandez,
+                Sheenly Gener, Brian Sy, Chino Lui, Teresa Loyzaga, Nicco Manlo,
+                Jomari Angeles, Clara Del Rosario, Dwein Baltazar, Aldo
+                Razmjoo</i
+              ></span
+            >
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >Ayef dreams of being an animator and has no time for love. When
+                she meets Manny, they agree to a convenient relationship that
+                will end the month she's set to leave for Singapore.
+              </i></span
+            ><br />
+
+            <a href="An Inconvenience Love.html"
+              ><button class="watch-trailer-btn">READ REVIEW</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 4th movie -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/okI1a173lwhkHPbabNqkxVbFyLF.jpg"
+                alt="THE WOMAN IN SEPTIC TANKL Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">THE WOMAN IN SEPTIC TANK</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: August 3, 2011</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Eugene Domingo
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; JM De Guzman, Kean Cipriano,
+                Cai Cortez, Jonathan Tadioan, Carlos Dala, K.C. Marcelo, Cherry
+                Pie Picache, Mercedes Cabral, Lani Tapia, Sonny Bautista, Aaron
+                Ching, Buddy Saramat, Carlon Matobato, Cheeno Macaraig, Ian
+                Segarra, She Maala</i
+              ></span
+            >
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >Cynical filmmakers plan on producing a bleak, independent film
+                dealing with poverty and prostitution in the hopes of scoring
+                free travel to international film festivals.
+              </i></span
+            ><br />
+
+            <a href="The Woman in Septic Tank.html"
+              ><button class="watch-trailer-btn">READ REVIEW</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th movie -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/tER1Ru1Grl5r8SIgcykoFztFoNZ.jpg"
+                alt="REMINGTON AND THE CURSE OF THE ZOMBADINGS Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">
+              REMINGTON AND THE CURSE OF THE ZOMBADINGS
+            </h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: August 31, 2011</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Martin Escudero
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Lauren Young, Michiko
+                Yamamot, Kerbie Zamora, Jenice De Belen, John Regala, Roderick
+                Paulate, Angelina Kanapi, Nar Cabico, Daniel Fernando, Leandro
+                Baldemor, Eugene Domingo, Odette Khan, Nicoo Manalo, Daniel
+                Medrana, Ward Laurca, Marian Rivera, Bayani Agbayani.</i
+              ></span
+            >
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >As the town's gay population turn up dead and covered in a
+                mysterious green goo, Remington fears he will become gay after a
+                drag queen curses him.
+              </i></span
+            ><br />
+
+            <a href="Remington and the Curse of the Zombadings.html"
+              ><button class="watch-trailer-btn">READ REVIEW</button></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!-- content ends here -->
+
+      <!-- footer starts here -->
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">FOLLOW US</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="PHILIKULAPHOTOS/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="PHILIKULAPHOTOS/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="PHILIKULAPHOTOS/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <!-- </a> -->
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="PHILIKULAPHOTOS/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+
+      <!-- footer ends here -->
+    </div>
+    <script src="burger.js"></script>
+  </body>
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema and explore its cultural and social significance with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques, Philippine culture, classic Filipino movies, contemporary Filipino cinema"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PHILiKula - Movie Review</title>
+    <link rel="stylesheet" href="other-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="perMoviecopy.css" />
+  </head>
+  <body>
+    <!-- header starts here-->
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img
+                src="PHILIKULAPHOTOS/logo.png"
+                alt="Logo"
+                class="logo-icon"
+              />
+            </div>
+          </div>
+
+          <div class="head-right" id="pasaway">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- header ends here -->
+
+      <!-- content starts here -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pyLkGGbfkT3tySgN1n9ASqZjRlX.jpg"
+                alt="An Inconvenience Love Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">AN INCONVENIENCE LOVE</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: November 23, 2022</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Belle Mariano & Donny
+              Pangilinan
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Tirso Cruz, JC Alcantara,
+                Jeffrey Quizon, Matet De Leon, Adrian Lindayag, Iana Bernandez,
+                Sheenly Gener, Brian Sy, Chino Lui, Teresa Loyzaga, Nicco Manlo,
+                Jomari Angeles, Clara Del Rosario, Dwein Baltazar, Aldo
+                Razmjoo</i
+              ></span
+            >
+            <h3 class="other-details1">
+              <span class="">GENRE:</span> &nbsp; Drama & Romance
+            </h3>
+            <h3 class="other-details">
+              <span class="">RATINGS:</span> &nbsp; 58% Critique Reviews, 99%
+              Audience Reviews
+            </h3>
+            <h3 class="other-details1">
+              <span class="">DIRECTOR:</span>&nbsp; Petersen Vargas
+            </h3>
+            <h3 class="other-details">
+              <span class="">AUTHOR:</span>&nbsp; Daisy Cayanan & Enrico C.
+              Santos
+            </h3>
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >Ayef dreams of being an animator and has no time for love. When
+                she meets Manny, they agree to a convenient relationship that
+                will end the month she's set to leave for Singapore.
+              </i></span
+            ><br />
+
+            <!-- experiment -->
+            <button class="watch-trailer-btn">WATCH TRAILER</button>
+            <div class="modal" id="trailerModal">
+              <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <iframe
+                  id="youtubeVideo"
+                  src="https://www.youtube.com/embed/iAy5Ompp5VU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+            <!-- experiment -->
+          </div>
+        </div>
+      </div>
+      <!-- content ends here -->
+
+      <!-- critic and reviews -->
+      <div class="criticAndrevs-container">
+        <div class="reviews-tabs">
+          <button class="tab-button" id="top-critics-tab">
+            TOP CRITIC REVIEWS
+          </button>
+
+          <button class="tab-button" id="audience-revs-tab">
+            AUDIENCE REVIEWS
+          </button>
+        </div>
+        <div class="reviews-content">
+          <!-- top Critic Reviews content -->
+          <div class="tab-content" id="top-critics-content">
+            <!-- critic 1 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Archi Sengupta</p>
+                <span class="company">LeisureByte</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  If you’re in the mood for something sweet and not serious and
+                  don’t want to be too invested, An Inconvenient Love is going
+                  to be right up your alley.
+                </p>
+                <br />
+                <a
+                  href="https://www.leisurebyte.com/an-inconvenient-love-review-donny-pangilinan-belle-mariano/"
+                  class="link-revs"
+                  target="_blank"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- crituc 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Ryan Oquiza</p>
+                <span class="company">Rappler</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  An Inconvenient Love restores faith in the love team genre. It
+                  recognizes that falling in love in the Philippines is
+                  comparable to turning on “hard mode” in a video game.
+                </p>
+                <br />
+                <a
+                  href="https://www.rappler.com/entertainment/movies/an-inconvenient-love-review-movie-restores-faith-love-team-genre/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">John Sooja</p>
+                <span class="company">Common Sense Media</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  This story could have been a miniseries or short episode
+                  series, given how many little side moments happen with each
+                  lead's friends and family.
+                </p>
+                <br />
+                <a
+                  href="https://www.commonsensemedia.org/movie-reviews/an-inconvenient-love"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 4 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Riya Singh</p>
+                <span class="company">Midgard Times</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The movie follows two young lovers who agree to a casual
+                  relationship, but it grows complicated as their romance
+                  reaches an expiration date.
+                </p>
+                <br />
+                <a
+                  href="https://moviesr.net/p-an-inconvenient-love-netflix-movie-review-you-have-seen-this-before"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 5 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Ahendrilla Goswami</p>
+                <span class="company">High on Film</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  An Inconvenient Love (2022), directed by Petersen Vargas, is a
+                  Philippine rom-com that lifts the most genre-defining elements
+                  of a romantic comedy and gives them a spin. It struggles to
+                  keep the romance between Ayef and Manny from becoming
+                  saccharine sweet, but this is a world of young love, and it is
+                  not so difficult to buy.
+                </p>
+                <br />
+                <a
+                  href="https://www.highonfilms.com/an-inconvenient-love-2022-movie-summary-ending-explained/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Audience Reviews content -->
+          <div class="tab-content" id="audience-revs-content">
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">KS</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">Would watch it over and over again.</p>
+              </div>
+            </div>
+
+            <!-- Audience Review 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Nitin P.</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  I believe that this movie revolves around the concept that
+                  "Selfless faith is what you call true love." Those who enjoy
+                  K-drama and romantic films should not miss this film.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Ashley</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  A feel good movie for everyone who is obsessed with kpop and
+                  teen love with a mix of family dramas from both the wealthy
+                  and the poor families. It will leave you with a smile while
+                  watching this film despite the obvious ending.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 4 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Bella</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Definitely a movie that this generation could relate
+                  to...issues tackled in the movie are very relevant...and this
+                  movie didn't give the viewers a "fairy tale" kind of love
+                  story, it's reality.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 5 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">PalmBeachG</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Really, the first time I ever watched a Filipino movie or
+                  drama. For some reason it came up on my Netflix list so I
+                  decided to watch it and found it was a nice love story.
+                  Actually I never heard of the term "Inconvenient Love" before
+                  so I didn't even know what they meant and they added it to
+                  their love contract that they made - what I took from it is
+                  that it meant that you only love when it is convenient for you
+                  - such as only when you are happy and not when the other
+                  person may need you the most because things are going sad or
+                  going wrong. You may want to bail when things get tough. Well
+                  the lead male I definitely loved in his role - he was cute and
+                  played it perfectly. Both the ML and the FL learned from their
+                  love so it was worth watching.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- experi sa tab switching -->
+
+      <!-- footer starts here -->
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">FOLLOW US</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="PHILIKULAPHOTOS/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="PHILIKULAPHOTOS/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="PHILIKULAPHOTOS/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <!-- </a> -->
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="PHILIKULAPHOTOS/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+
+      <!-- footer ends here -->
+    </div>
+    <script src="burger.js"></script>
+    <script src="PHhomeScript.js"></script>
+  </body>
+</html>

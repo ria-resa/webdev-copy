@@ -1,0 +1,426 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.page-title {
+  color: #f3f3e0;
+}
+.slider-container {
+  max-width: 414px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+  background-color: #000 !important;
+  border-radius: 20px;
+  height: 750px;
+}
+.slider-arrow {
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-out;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  min-width: 100%;
+  padding: 20px;
+  margin-top: 2%;
+  padding-bottom: 0 !important;
+  display: flex;
+  gap: 20px;
+  align-items: center !important;
+  scroll-snap-align: start;
+  padding-left: 10%;
+  flex-direction: row !important;
+
+  position: relative;
+  overflow: hidden;
+}
+.slide-background img {
+  position: absolute;
+  object-fit: cover;
+  top: 20px;
+  left: 50px;
+  width: 90%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  filter: brightness(10%);
+}
+.slide-background {
+  border-radius: 25px !important;
+}
+
+.slide-content {
+  flex: 0.8;
+  width: 300px !important;
+}
+
+.slide-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  width: 90%;
+  font-family: Amaranth, var(--default-font-family);
+  color: #b8001f;
+}
+
+.slide-info {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  width: 90%;
+  font-family: Montserrat, var(--default-font-family);
+  font-weight: 700;
+  color: #f3f3e0;
+}
+
+.slide-overview {
+  margin: 1rem 0;
+  font-style: italic;
+  opacity: 0.9;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  /* add */
+  width: 90%;
+  font-weight: 700;
+  font-family: Montserrat, var(--default-font-family);
+  color: #f3f3e0;
+}
+
+.movie-poster {
+  width: 250px;
+  height: 375px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.movie-poster img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.read-review {
+  width: 50%;
+  text-align: center;
+  display: inline-block;
+  background-color: #b8001f;
+  font-family: Montserrat, var(--default-font-family);
+  color: #f3f3e0;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.read-review:hover {
+  background-color: #810218;
+  color: #d3d3be;
+  transition: 0.3s;
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.nav-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-dot.active {
+  background-color: #fff;
+  transform: scale(1.2);
+}
+
+.slider-arrow {
+  display: block;
+  position: absolute;
+  top: 90%;
+  margin: 1%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}
+
+.page-title {
+  text-align: center;
+  padding: 10px;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-size: 1.2rem;
+  color: #f3f3e0;
+  font-family: Montserrat, var(--default-font-family);
+}
+.page-titleF {
+  text-align: center;
+  position: absolute;
+  top: 0% !important;
+
+  left: 24% !important;
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #f3f3e0;
+
+  font-family: Montserrat, var(--default-font-family);
+}
+
+.explore-more {
+  position: absolute;
+  top: 92%;
+  left: 9%;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  color: #f3f3e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: Montserrat, var(--default-font-family);
+}
+
+.explore-more::after {
+  display: inline-block;
+  margin-left: 5px;
+}
+@media (min-width: 768px) {
+  .slider-container {
+    max-width: 1300px;
+    height: 540px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-arrow {
+    display: block;
+  }
+  .page-title {
+    font-size: 16px !important;
+    padding-top: 0 !important;
+  }
+
+  .slider-container {
+    max-width: 414px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+    background-color: #000 !important;
+    border-radius: 20px;
+    height: 750px;
+    margin-bottom: 10%;
+  }
+  .slide-background {
+    visibility: hidden;
+    height: 0 !important;
+  }
+
+  .slide {
+    padding-left: 0;
+    padding-right: 0;
+    flex-direction: column-reverse !important;
+  }
+  .movie-poster {
+    height: 200px;
+    width: 300px;
+  }
+  .movie-poster img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .slide-title {
+    font-size: 24px;
+    width: 100%;
+  }
+  .slider-arrow {
+    top: 90%;
+  }
+  .slide-info,
+  .slide-overview {
+    text-align: justify;
+    width: 100%;
+  }
+  .read-review {
+    width: 100%;
+  }
+  .explore-more {
+    font-size: 14px;
+  }
+}
+
+/* for reco movies css start */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  max-width: 414px;
+
+  padding: 0 10px;
+  width: 95%;
+  margin-bottom: 10%;
+}
+
+.movie-card {
+  background: #f3f3e0;
+  border-radius: 15px;
+  padding: 8px;
+  position: relative;
+  aspect-ratio: 3/4;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-self: center;
+}
+
+.movie-poster1 {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #333;
+}
+
+.movie-poster1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.movie-title1 {
+  color: #000;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  font-family: Amaranth, var(--default-font-family);
+  font-weight: bolder;
+  position: relative;
+  top: -5px;
+}
+
+.read-review1 {
+  background: #b8001f;
+  color: #f3f3e0;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  position: relative;
+  top: -15px;
+  font-family: Montserrat, var(--default-font-family);
+}
+.read-review1:hover {
+  background: #810218;
+  color: #d3d3be;
+  transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  .movie-grid {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 90%;
+    gap: 25px;
+  }
+
+  .movie-title1 {
+    font-size: 14px;
+    font-family: Amaranth, var(--default-font-family);
+  }
+
+  .read-review1 {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .page-titleF {
+    text-align: center;
+    position: absolute;
+    top: 2% !important;
+    left: 42% !important;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: #f3f3e0;
+    font-family: Montserrat, var(--default-font-family);
+  }
+
+  .explore-more {
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    color: #f3f3e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: Montserrat, var(--default-font-family);
+  }
+}

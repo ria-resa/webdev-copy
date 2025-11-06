@@ -1,0 +1,197 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.about-section {
+  width: 80%;
+  background-image: url(assets/9BG.png);
+  height: auto;
+  padding: 5%;
+  border-radius: 25px;
+  margin: 3% 5%;
+  margin-bottom: 5%;
+  text-align: justify;
+}
+
+h1,h2 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 700;
+  font-family: Amaranth, var(--default-font-family);
+  color: #f3f3e0;
+}
+h2{
+  color: #fbbc3f;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Montserrat, var(--default-font-family);
+  font-weight: 700;
+  line-height: 30px;
+  color: #f3f3e0;
+}
+
+.logo2 {
+  width: 20%;
+  height: auto;
+}
+.logo2 img {
+  width: 100%;
+}
+
+
+@media (max-width: 700px) {
+  .container {
+    padding: 20px 15px;
+  }
+
+  h1, h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .logo2 {
+    width: 50%;
+  }
+  .about-section {
+    width: 95%;
+    text-align: justify;
+  }
+}
+
+/* contact part */
+.icon3 {
+  color: #f3f3e0;
+  font-size: 40px;
+}
+.contain-all {
+  width: 100%;
+  background-color: black;
+}
+.container2 {
+  width: 90%;
+  margin: 5% auto;
+  padding: 5%;
+  padding-left: 13%;
+  background-image: url(assets/9BG.png);
+  border-radius: 25px;
+}
+.contactus {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #f3f3e0;
+}
+
+.logo3 {
+  width: 30%;
+  height: auto;
+}
+.logo3 img {
+  width: 100%;
+}
+.welcome-text {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #f3f3e0;
+}
+
+.contact-info2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 0%;
+  /* og is padding-left: 50%; but i decided to change it*/
+}
+
+/* added part itong em */
+em {
+  font-size: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-family: Montserrat, var(--default-font-family);
+}
+
+.contact-item .icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item span {
+  color: #f3f3e0;
+
+  /* added itong baba */
+  font-size: 1rem; 
+}
+
+.contact-item em {
+  font-style: italic;
+  color: #f3f3e0;
+}
+#project-team {
+  color: #fbbc3f !important;
+}
+
+@media (max-width: 700px) {
+  .logo3 {
+    width: 50%;
+  }
+  .icon3 {
+    font-size: 30px;
+  }
+  .welcome-text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .contact-item {
+    font-size: 1rem;
+  }
+  .contactus {
+    font-size: 2.5rem;
+  }
+   .contact-info2 {
+    /* padding-left: 0% !important;   this is supposed to be included since og is 50% sa dekstop view
+    kaso i decided to change it again */
+    font-size: .1em;
+  }
+
+  /* added part din itong sa baba */
+  em{
+    font-size: .7rem;
+  }
+  .contact-item span {
+  font-size: .7rem; 
+}
+  
+}

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema and explore its cultural and social significance with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques, Philippine culture, classic Filipino movies, contemporary Filipino cinema"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PHILiKula - Movie Review</title>
+    <link rel="stylesheet" href="other-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="perMoviecopy.css" />
+  </head>
+  <body>
+    <!-- main from ivan starts here-->
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img
+                src="PHILIKULAPHOTOS/logo.png"
+                alt="Logo"
+                class="logo-icon"
+              />
+            </div>
+          </div>
+
+          <div class="head-right" id="pasaway">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ivan head ends here -->
+
+      <!-- content starts here -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/7R940b9RNNKLDrAI1GmCjOd5ta.jpg"
+                alt="Hello, Love, Again Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">HELLO, LOVE, AGAIN</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: November 13, 2024</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Kathryn Bernardo & Alden
+              Richards
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Lovely Abella, Jennica
+                Garcia, Maymay Entrata, Jeffrey Tam, Jameson Blake, Valerie,
+                Conception, kakai Bautista, Joross Gamboa, Ruby Rodriguez,
+                Jobert Austria, Mark LaBella</i
+              ></span
+            >
+            <h3 class="other-details1">
+              <span class="">GENRE:</span> &nbsp; Drama & Romance
+            </h3>
+            <h3 class="other-details">
+              <span class="">RATINGS:</span> &nbsp; 70% Critique Reviews, 97%
+              Audience Reviews
+            </h3>
+            <h3 class="other-details1">
+              <span class="">DIRECTOR:</span>&nbsp; Cathy Garcia-Sampana
+            </h3>
+            <h3 class="other-details">
+              <span class="">AUTHOR:</span>&nbsp; Carmi Raymundo, Crystal S. San
+              Miguel, & Olivia M. Lamasan
+            </h3>
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >After fighting for their love to conquer time, distance and a
+                global shutdown that keeps them apart, Joy and Ethan meet again
+                in Canada but realize that they have also changed a lot,
+                individually.
+              </i></span
+            ><br />
+
+            <!-- experiment -->
+            <button class="watch-trailer-btn">WATCH TRAILER</button>
+            <div class="modal" id="trailerModal">
+              <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <iframe
+                  id="youtubeVideo"
+                  src="https://www.youtube.com/embed/uRBHJPic9zc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+      
+            <!-- experiment -->
+          </div>
+        </div>
+      </div>
+      <!-- content ends here -->
+
+      <!-- critic and reviews -->
+      <div class="criticAndrevs-container">
+        <div class="reviews-tabs">
+          <button class="tab-button" id="top-critics-tab">
+            TOP CRITIC REVIEWS
+          </button>
+
+          <button class="tab-button" id="audience-revs-tab">
+            AUDIENCE REVIEWS
+          </button>
+        </div>
+        <div class="reviews-content">
+          <!-- Top Critic Reviews content -->
+          <div class="tab-content" id="top-critics-content">
+            <!-- critic 1 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Anne Campbell</p>
+                <span class="company">Film Gate Reviews</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Hello, Love, Again has a good idea for the sequel, revisit the
+                  same characters in a new city. When Joy leaves Hong Kong for
+                  Canada, she’s starting a new life, but with the same love, so
+                  romantic issues are sure to abound. I was thinking something
+                  like Past Lives, but one where we already knew the characters.
+                  Instead the writers took every single idea they had for the
+                  sequel and packed all of them in. The result is a movie about
+                  everything that says nothing.
+                </p>
+                <br />
+                <a
+                  href="http://www.filmgatereviews.com/2024/11/hello-love-again-movie-review.html"
+                  class="link-revs"
+                  target="_blank"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- crituc 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Shahrbanoo Golmohamid</p>
+                <span class="company">Gazettely</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  As a touching follow-up, “Hello, Love, Again” picks up where
+                  Joy and Ethan’s love story left off in the busy streets of
+                  Hong Kong and moved to Canada’s cold, difficult environment.
+                  Kathryn Bernardo and Alden Richards will be back together in
+                  this 2024 movie, following the story that won people over in
+                  the 2019 hit “Hello, Love, Goodbye.”
+                </p>
+                <br />
+                <a
+                  href="https://gazettely.com/2024/11/entertainment/hello-love-again-review/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Jan Milo Severo</p>
+                <span class="company">PhilStar Global</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  MANILA, Philippines — Blockbuster director Cathy
+                  Garcia-Sampana proved once again that doing a sequel from a
+                  blockbuster movie will not harm the first one if you are good
+                  enough to surpass the pioneer movie. Cathy masterfully did
+                  justice to "Hello Love Goodbye," the once top blockbuster
+                  movie of all time after Dingdong Dantes and Marian Rivera's
+                  Metro Manila Film Festival 2023 entry "Rewind" surpassed it
+                  last December.
+                </p>
+                <br />
+                <a
+                  href="https://www.philstar.com/movies/2024/11/13/2399773/review-kathryn-bernardo-will-shock-fans-hello-love-again"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Audience Reviews content -->
+          <div class="tab-content" id="audience-revs-content">
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Karenina</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The story is really well-written. Alden and Kathryn, who
+                  played Ethan and Joy, are very great actors. So much kilig!!!
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Lafeyette A.</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  This is a great conclusion to the original movie called hello
+                  love. Goodbye. This is such a fun and heartwarming story and
+                  the characters are great, especially the supporting characters
+                  to the main character of joy and Ethan. I'm not Filipino but I
+                  watched the first one just a few weeks back so I had to see
+                  the second one and it's a phenomenal way to continue the story
+                  and also close it out with a great feel-good ending. I would
+                  recommend this movie to anyone that likes romantic comedies or
+                  love stories and I would also recommend watching the first one
+                  before you watch this one. And in conclusion, usually sequels
+                  aren't any good, but this one is just as good of a movie as
+                  the first if not better and in my opinion it is better than
+                  the first one.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Edna E.</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Great movie, cant get over with the beautiful story of Joy
+                  (Kathryn ) & Alden ( Ethan ). A must see movie
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 4 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Alexander Victa</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Nothing like seeing a pinoy love story movie in the theater
+                  filled with titos and titas reacting to "kilig" scenes!
+                  Beautiful story. It was worth the 3-hr drive.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 5 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Joshua T.</p>
+                <span class="stars">
+                  <img
+                    src="assets/4_stars-removebg-preview.png"
+                    alt="4 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  A more mature take of Hello, Love, Goodbye. There were some
+                  minor lapses that could've done better but that's totally fine
+                  as the chemistry and acting skills of Kathryn and Alden are
+                  just outstanding. The expressive eyes of Alden and that
+                  breakdown scene of Kathryn will surely gave them acting nods.
+                  My favorite part is the hardship that they experienced during
+                  the lockdown, I feel like I was there experiencing it with
+                  them. It was just painful to see the world that they dream
+                  together are just quickly falling apart. Lastly, Joross and
+                  Valerie are scene stealers.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- experimetn sa tab switching -->
+
+      <!-- footer starts here -->
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">FOLLOW US</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="PHILIKULAPHOTOS/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="PHILIKULAPHOTOS/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="PHILIKULAPHOTOS/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <!-- </a> -->
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="PHILIKULAPHOTOS/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+
+      <!-- footer ends here -->
+    </div>
+    <script src="burger.js"></script>
+    <script src="PHhomeScript.js"></script>
+  </body>
+</html>

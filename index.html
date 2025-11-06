@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema and explore its cultural and social significance with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques, Philippine culture, classic Filipino movies, contemporary Filipino cinema"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PHILiKula - Movie Review</title>
+    <link rel="stylesheet" href="other-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="perMoviecopy.css" />
+    <link rel="stylesheet" href="PHILhome.css" />
+  </head>
+  <body>
+    <!-- main from ivan starts here-->
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img
+                src="PHILIKULAPHOTOS/logo.png"
+                alt="Logo"
+                class="logo-icon"
+              />
+            </div>
+          </div>
+
+          <div class="head-right" id="pasaway">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="#" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="#" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ivan head ends here -->
+
+      <!-- content starts here -->
+      <div class="contain-main">
+        <div class="slider-container">
+          <h1 class="page-titleF">FEATURED REVIEWS</h1>
+          <button class="slider-arrow arrow-left">←</button>
+          <button class="slider-arrow arrow-right">→</button>
+          <div class="slider-wrapper">
+            <div class="slider">
+              <div class="slide">
+                <div class="slide-background">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6O1u0cg9JDVfvuQzPmc79zuLngm.jpg"
+                    alt=""
+                  />
+                </div>
+
+                <div class="slide-content">
+                  <h2 class="slide-title">Heneral Luna</h2>
+                  <div class="slide-info">STARRING: John Arcilla</div>
+                  <div class="slide-info">GENRE: History</div>
+                  <div class="slide-info">
+                    RATINGS: 78% Critic Reviews, 88% Audience Score
+                  </div>
+                  <p class="slide-overview">
+                    OVERVIEW: In 1898, Gen. Antonio Luna faces resistance from
+                    his own countrymen as he fights for freedom during the
+                    Philippine-American War.
+                  </p>
+                  <a href="LunaRevs.html" class="read-review">READ REVIEW</a>
+                </div>
+                <div class="movie-poster">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vCwbsgkdzpgTADyaa3g4jaWVAaR.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide-background">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bXzssnpeDayG8D8EJubPYjqA8DI.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-content">
+                  <h2 class="slide-title">KIMMY DORA: KAMBAL SA KIYEME</h2>
+                  <div class="slide-info">STARRING: Eugene Domingo</div>
+                  <div class="slide-info">GENRE: Comedy</div>
+                  <div class="slide-info">
+                    RATINGS: Critic Reviews 71%, Audience Reviews 81%
+                  </div>
+                  <p class="slide-overview">
+                    OVERVIEW: Kimmy and Dora Go Dong Hae, who are identical twin
+                    sisters, cannot be any more different from each other. Life
+                    turns out to be even more complicated as the twins become
+                    rivals both in life and in love.
+                  </p>
+                  <a
+                    href="Kimmy Dora - Ang Kambal sa Kiyeme.html"
+                    class="read-review"
+                    >READ REVIEW</a
+                  >
+                </div>
+                <div class="movie-poster">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bXzssnpeDayG8D8EJubPYjqA8DI.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="slide-background">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6D98XukeN3lJf5BJ4vEIcHMwu5n.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide-content">
+                  <h2 class="slide-title">CLARITA</h2>
+                  <div class="slide-info">STARRING: Jodi Sta. Maria</div>
+                  <div class="slide-info">GENRE: Horror</div>
+                  <div class="slide-info">
+                    Critic Reviews 56%, Audience Reviews 70%
+                  </div>
+                  <p class="slide-overview">
+                    OVERVIEW: A young woman is apprehended and held by police
+                    when they suspect that she is possessed by a demon.
+                  </p>
+                  <a href="Clarita.html" class="read-review">READ REVIEW</a>
+                </div>
+                <div class="movie-poster">
+                  <img
+                    src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/6D98XukeN3lJf5BJ4vEIcHMwu5n.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-nav">
+            <div class="nav-dot active"></div>
+            <div class="nav-dot"></div>
+            <div class="nav-dot"></div>
+          </div>
+          <div class="explore-more">EXPLORE MORE FILIPINO MOVIE REVIEWS</div>
+        </div>
+      </div>
+
+      <!-- start of reco movies -->
+      <h1 class="page-title">RECOMMENDED REVIEWS</h1>
+
+      <div class="movie-grid">
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/e1eGvrYWTBp5ryznO0rYLwTpuWG.jpg"
+              alt="Lolo and Kid"
+            />
+          </div>
+          <a href="Lolo and the Kid.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">LOLO AND THE KID</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sUJKto0SUNPo5JLoQSWAadr2wbw.jpg"
+              alt="Hello Love"
+            />
+          </div>
+          <a href="Hello, Love, Again.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">HELLO, LOVE, AGAIN</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/3YC0cVq092rWZLp7DiWXo75GRCU.jpg"
+              alt="I Love Lizzy"
+            />
+          </div>
+          <a href="I Love Lizzy.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">I LOVE LIZZY</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8EuKlaYo53CDFAKbxzkQ8r2bSUP.jpg"
+              alt="Birdshot"
+            />
+          </div>
+          <a href="Birdshot.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">BIRDSHOT</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8E9Tbz8X1xLdtpMU9rMhiUdWXZs.jpg"
+              alt="Fuchsia Libre"
+            />
+          </div>
+          <a href="The Trigonal - Fight for Justice.html" class="read-review1"
+            >Read Review</a
+          >
+          <h2 class="movie-title1">THE TRIGONAL</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/5RmF0Hbotq206ofgb4ZgEBnQkC1.jpg"
+              alt="Deleter"
+            />
+          </div>
+          <a href="Deleter.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">DELETER</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/plv85l002BHwPq7zvjceGt4h3nz.jpg"
+              alt="Entitled"
+            />
+          </div>
+          <a href="The Entitled.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">THE ENTITLED</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/zzMvqwJaSPKkN5mkDQ0dLHJsPho.jpg"
+              alt="Arisaka"
+            />
+          </div>
+          <a href="Arisaka.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">ARISAKA</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/99Ry6jTT6XHnUV0ddm7Bc1Az3AR.jpg"
+              alt="Haunted Mansion"
+            />
+          </div>
+          <a href="Haunted Mansion.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">HAUNTED MANSION</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sIdczpaO0XXBe6OEIL8NbWMqQrO.jpg"
+              alt="Outside"
+            />
+          </div>
+          <a href="Outside.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">OUTSIDE</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/fgV27uGi7kLj7BZp6dm21ggdtRt.jpg"
+              alt="Love You Long Time"
+            />
+          </div>
+          <a href="Love You Long Time.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">LOVE YOU LONG TIME</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/hMYlI03yyJK8X0HseIIDaXHBlhc.jpg"
+              alt="Quezon's Game"
+            />
+          </div>
+          <a href="Quezon_s Game.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">QUEZON'S GAME</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/cYRGNCzFLtIJOPI0QwHBSX0IIdB.jpg"
+              alt="Gomburza"
+            />
+          </div>
+          <a href="GomBurZa.html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">GOMBURZA</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/bXNKyqNjeGF2XxBpghFbySuM9se.jpg"
+              alt="GG (Good Game)"
+            />
+          </div>
+          <a href="GG (Good Game).html" class="read-review1">Read Review</a>
+          <h2 class="movie-title1">GG: GOOD GAME</h2>
+        </div>
+
+        <div class="movie-card">
+          <div class="movie-poster1">
+            <img
+              src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/pyLkGGbfkT3tySgN1n9ASqZjRlX.jpg"
+              alt="An Inconvenience love"
+            />
+          </div>
+          <a href="An Inconvenience Love.html" class="read-review1"
+            >Read Review</a
+          >
+          <h2 class="movie-title1">AN INCONVENIENCE LOVE</h2>
+        </div>
+      </div>
+
+      <!-- footer starts here -->
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">FOLLOW US</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="PHILIKULAPHOTOS/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="PHILIKULAPHOTOS/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="PHILIKULAPHOTOS/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="PHILIKULAPHOTOS/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+
+      <!-- footer ends here -->
+    </div>
+    <script src="script.js"></script>
+    <script src="burger.js"></script>
+  </body>
+</html>

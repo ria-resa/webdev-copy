@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema and explore its cultural and social significance with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques, Philippine culture, classic Filipino movies, contemporary Filipino cinema"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PHILiKula - Movie Review</title>
+    <link rel="stylesheet" href="other-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="perMoviecopy.css" />
+  </head>
+  <body>
+    <!-- main from ivan starts here-->
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img
+                src="PHILIKULAPHOTOS/logo.png"
+                alt="Logo"
+                class="logo-icon"
+              />
+            </div>
+          </div>
+
+          <div class="head-right" id="pasaway">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ivan head ends here -->
+
+      <!-- content starts here -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/vvArzms4uGDAlqo6JfeAe0b4ro4.jpg"
+                alt="Buybust Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">BUYBUST</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: August 1, 2018</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Anne Curtis
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Alex Calleja, Ricky Pascua,
+                Victor Neri, Joross Gamboa, Brandon Vera, Arjo Atayde, Levi
+                Ignacio, Tarek El tayech, ian Ignacio, Sheen Gener, Nafa
+                Hilario, AJ Muhlach, Mara Lopez, Nonie Buencamino, Paolo
+                Rodriguez</i
+              ></span
+            >
+            <h3 class="other-details1">
+              <span class="">GENRE:</span> &nbsp; Action
+            </h3>
+            <h3 class="other-details">
+              <span class="">RATINGS:</span> &nbsp; 82% Critique Reviews, 66%
+              Audience Reviews
+            </h3>
+            <h3 class="other-details1">
+              <span class="">DIRECTOR:</span>&nbsp; Erik Matti
+            </h3>
+            <h3 class="other-details">
+              <span class="">AUTHOR:</span>&nbsp; Anton C. Santamaria & Erik
+              Matti
+            </h3>
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >After surviving the slaughter of her entire squad in a drug
+                raid compromised by dirty cops, anti-narcotics special operative
+                Nina Manigan is eager to go head-to-head with the drug cartels
+                that hold a bloody grip on Manila. But when her new mission in
+                the city's most dangerous slum goes south, the angry civilians
+                turn on her squad. Trapped between a brutal drug gang and hordes
+                of bloodthirsty citizens, their only option is to fight their
+                way out.
+              </i></span
+            ><br />
+
+            <!-- experiment -->
+            <button class="watch-trailer-btn">WATCH TRAILER</button>
+            <div class="modal" id="trailerModal">
+              <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <iframe
+                  id="youtubeVideo"
+                  src="https://www.youtube.com/embed/rJMHK1CXaKE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+   
+            <!-- experiment -->
+          </div>
+        </div>
+      </div>
+      <!-- content ends here -->
+
+      <!-- critic and reviews -->
+      <div class="criticAndrevs-container">
+        <div class="reviews-tabs">
+          <button class="tab-button" id="top-critics-tab">
+            TOP CRITIC REVIEWS
+          </button>
+
+          <button class="tab-button" id="audience-revs-tab">
+            AUDIENCE REVIEWS
+          </button>
+        </div>
+        <div class="reviews-content">
+          <!-- Top Critic Reviews content -->
+          <div class="tab-content" id="top-critics-content">
+            <!-- critic 1 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Simon Abrams</p>
+                <span class="company">RogerEbert</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  So often bogged down by pseudo-naturalistic long takes and
+                  generic cop/robber power dynamics that it makes one wonder
+                  what the point of watching such a film is.
+                </p>
+                <br />
+                <a
+                  href="https://www.rogerebert.com/reviews/buybust-2018"
+                  class="link-revs"
+                  target="_blank"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- crituc 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Brent McKnight</p>
+                <span class="company">The Last Thing I See</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Rough around the edges and chaotic, and full of weird-as-hell
+                  flourishes, it's mean and violent and bleak as hell-be
+                  prepared for beheadings and morally questionable dirty deeds
+                  American movies shy away from.
+                </p>
+                <br />
+                <a
+                  href="https://www.thelastthingisee.com/2018/08/buybust-2018-movie-review.html"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Panos Kotzathanasis</p>
+                <span class="company">Asian Movie Pulse</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The film starts a bit slowly, building the tension and
+                  introducing the characters, but as soon as the story moves to
+                  the slums, the action picks up and never actually stops,
+                  taking over the whole narrative.
+                </p>
+                <br />
+                <a
+                  href="https://asianmoviepulse.com/2018/07/film-review-buybust-2018-by-erik-matti/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 4 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Richard Yu</p>
+                <span class="company">Cinema Escapist</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Beyond its realistic portrayal of gunfights, BuyBust does not
+                  shy away from the brutal realities of a drug war. Civilians
+                  living in the slum are caught in the crossfire, and ultimately
+                  rise up to attack both the drug cartel and the PDEA agents.
+                </p>
+                <br />
+                <a
+                  href="https://www.cinemaescapist.com/2018/07/review-buybust-brutally-realistic-depiction-philippine-drug-war/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 5 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Adam Patterson</p>
+                <span class="company">Film Pulse</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  A non-stop, adrenaline-soaked bloodbath that hits the ground
+                  running and doesn't let up until the exhausting conclusion.
+                </p>
+                <br />
+                <a
+                  href="https://filmpulse.net/nyaff-2018-buybust-review/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Audience Reviews content -->
+          <div class="tab-content" id="audience-revs-content">
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Emilliano Jr S.</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Hollywood feels for a local Filipino action film.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Anonymous</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  This isnt your boring Filipino film, the fucking leveled up
+                  their game.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Anonymous</p>
+                <span class="stars">
+                  <img
+                    src="assets/5_stars-removebg-preview.png"
+                    alt="5 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  I already watched this movie using boxxy software. This movie
+                  was good.
+                </p>
+              </div>
+            </div>
+            <!-- Audience Review 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Late R.</p>
+                <span class="stars">
+                  <img
+                    src="assets/4_stars-removebg-preview.png"
+                    alt="4 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The cinematography is pretty nice in places and the cast is
+                  solid, but jeez-louise, it doesn't get a lot else right. The
+                  general setup meant it could have been a Filipino ‘The Raid'
+                  style film which might have been fun, but unfortunately,
+                  there's just too much that goes awry: the characters are
+                  extremely thinly written so that you don't actually care for
+                  any of them; the fight choreography is atrocious, silly and
+                  lacks any realism where most of the performers look like they
+                  have no idea what they're doing; and just as badly, even if
+                  they did know, you wouldn't have been able to see much of it
+                  because the camerawork is all over the place. Those last two
+                  are a real problem considering how much of the film consists
+                  of just that. To top it all off, it's too long and feels
+                  longer because you have to suffer through all of the
+                  aforementioned. Ultimately, it's just a badly filmed massacre
+                  that is difficult to enjoy which means that ‘Buy Bust' is a
+                  bit of a bust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- experimetn sa tab switching -->
+
+      <!-- footer starts here -->
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">FOLLOW US</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="PHILIKULAPHOTOS/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="PHILIKULAPHOTOS/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="PHILIKULAPHOTOS/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <!-- </a> -->
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="PHILIKULAPHOTOS/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+
+      <!-- footer ends here -->
+    </div>
+    <script src="burger.js"></script>
+    <script src="PHhomeScript.js"></script>
+  </body>
+</html>

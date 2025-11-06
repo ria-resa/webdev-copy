@@ -1,0 +1,346 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+.genre-title {
+  color: #f3f3e0;
+  width: 600px;
+  height: 70px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1%;
+  border-radius: 50px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #f3f3e0;
+  border: 2px solid #f3f3e0;
+}
+.content-container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f3f3e0;
+  width: 85%;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin: 1%;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.movie-title {
+  font-family: Amaranth, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  color: #b8001f;
+}
+
+.reds {
+  color: #b8001f;
+}
+.poster-container {
+  width: 258px;
+  height: auto;
+}
+.poster {
+  background: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+.movie-details {
+  width: 828px;
+  text-align: justify;
+}
+.other-details1 {
+  padding-top: 20px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  color: black;
+}
+.other-details {
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: black;
+}
+
+.span-details {
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  color: black;
+}
+
+/* experiment trailer  */
+.watch-trailer-btn {
+  margin-top: 30px;
+  padding: 10px 50px;
+  background-color: #b8001f;
+  color: #f3f3e0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 50%;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.watch-trailer-btn:hover {
+  background-color: #810218;
+  color: #d3d3be;
+  transition: 0.3s;
+}
+.watch-trailer-btn a {
+  text-decoration: none;
+  color: #f3f3e0;
+}
+.watch-trailer-btn a:hover {
+  text-decoration: none;
+  color: #d3d3be;
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .head-right .dropdown,
+  .head-right .about-button,
+  .head-right .contact-button,
+  .head-right .home-button {
+    display: none;
+  }
+  .head-right .burger {
+    display: block;
+    font-size: 42px;
+    transform: translate(-420px, 11px);
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .head-container {
+    height: 100px;
+  }
+
+  .head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .genres-button,
+  .movies-button,
+  .about-button,
+  .contact-button,
+  .home-button {
+    transform: translate(-9px, 25px);
+  }
+
+  .dropdown-content {
+    margin-top: 35px;
+    margin-bottom: -50px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .logo {
+    font-size: 44px;
+    margin-top: -45px;
+    margin-left: 58px;
+  }
+
+  .logo-pic {
+    width: 35px;
+    transform: translate(-14px, -29px);
+  }
+
+  .head-bottom {
+    transform: translate(-420px, 17px);
+  }
+
+  .top-title {
+    font-size: 17px;
+    line-height: 15px;
+  }
+
+  .top-title-info {
+    font-size: 10px;
+    margin-right: 6px;
+  }
+
+  .footer-container {
+    height: 300px;
+  }
+
+  .footer-top {
+    margin-top: 10px;
+    width: 360px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .footer-info {
+    width: 360px;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-button-footer {
+    margin-left: 46px;
+    text-wrap: nowrap;
+    font-size: 29px;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .fb-button,
+  .insta-button,
+  .twitter-button,
+  .youtube-button {
+    width: 33px;
+  }
+
+  .social-media {
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* content edit na */
+  .genre-title {
+    margin-bottom: 5%;
+    width: 90%;
+    height: 45px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #f3f3e0;
+    border: 2px solid #f3f3e0;
+  }
+  .content {
+    flex-direction: column;
+    gap: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+  }
+  .content-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f3f3e0;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 2%;
+  }
+  .movie-title {
+    font-family: Amaranth, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #b8001f;
+    margin-top: 4%;
+  }
+  .reds {
+    font-size: 12px;
+  }
+
+  .poster-container {
+    width: 90%;
+    height: 300px;
+  }
+  .poster {
+    background: no-repeat;
+    background-size: cover;
+    /* eto pala para hindi mag stretch ung image */
+    object-fit: cover;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  .movie-details {
+    width: 85%;
+    text-align: justify;
+  }
+  .other-details1 {
+    padding-top: 2%;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 30px;
+    color: black;
+    text-align: start;
+  }
+  .other-details {
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 28px;
+    color: black;
+  }
+
+  .span-details {
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black;
+  }
+
+  /* experiment trailer  */
+  .watch-trailer-btn {
+    margin-top: 20px;
+    padding: 10px 50px;
+    background-color: #b8001f;
+    color: #f3f3e0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 29px;
+  }
+}

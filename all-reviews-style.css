@@ -1,0 +1,728 @@
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+.body {
+  height: 2000px;
+}
+
+.main-container {
+  background-color: #1b1b1b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header style*/
+.head-container {
+  display: flex;
+  height: 135px;
+  background-image: url(movies-photo/background-header.png);
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.head-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.logo-container {
+  position: relative;
+  margin-top: -15px;
+}
+
+.logo {
+  font-family: 'Inknut Antiqua', Helvetica;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.00px;
+  line-height: normal;
+  margin-right: 20px;
+  margin-top: -20px;
+}
+
+.genres-button, .movies-button, .about-button, .contact-button, .home-button {
+  color: #F3F3E0;
+  cursor: pointer;
+  font-family: 'Inter', Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.home-button {
+  margin-right: 30px;
+}
+
+.ph {
+  color: #4f75ff;
+}
+
+.il {
+  color: #c7253e;
+}
+
+.ikula {
+  color: #fabc3f;
+}
+
+.logo-pic {
+  position: absolute;
+  top: 3px; 
+  left: 90%;
+  transform: translateX(-50%);
+  width: 44px;
+}
+
+.logo-icon {
+  width: 100%;
+}
+
+.head-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+  margin-right: 30px;
+  padding-bottom: 55px;
+}
+
+.contact-button {
+  white-space: nowrap;
+}
+
+.head-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.top-title {
+  color: #f3f3e0;
+  font-family: "Zen Tokyo Zoo";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 10.92px;
+  line-height: 60px;
+  white-space: nowrap;
+  letter-spacing: 3.60px;
+  line-height: 36px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.top-title-info {
+  color: #f3f3e0;
+  font-family:"Inclusive Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  white-space: nowrap;
+  letter-spacing: 1.60px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1b1b1b;
+  min-width: 120px;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+.dropdown-content a {
+  color: #F3F3E0;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Inter', Helvetica;
+}
+
+.dropdown-content a:hover {
+  background-color: #323232;
+}
+
+.dropdown:focus-within .dropdown-content {
+  display: block;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 26px;
+  margin-right: 30px;
+  padding-bottom: 55px;
+}
+
+.head-right .burger {
+  font-size: 30px;
+  cursor: pointer;
+  color: #f3f3e0;
+}
+
+.burger {
+  display: none;
+}
+
+.head-right .dropdown .dropdown-content {
+  position: absolute;
+  z-index: 1;
+}
+
+.head-right .burger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001; 
+}
+
+.burger-menu {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: auto;
+}
+
+
+.dropdown-content.show {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/*all reviews style*/
+.reviews-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  margin-top: 20px;
+}
+
+.body-container {
+  display: grid; 
+  grid-template-rows: repeat(15, 215px); 
+  grid-template-columns: repeat(2, 550px);
+  background-color: black;
+  height: 3212px;
+  width: 1170px;
+  border-radius: 25px;
+  place-items: center;
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+
+.body-container > div {
+  margin-left: 79px;
+}
+
+.top-button {
+  grid-column: span 2;
+  align-items: center;
+  background-color: black;
+  border: 1.5px solid;
+  border-color: #f3f3e0;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  padding: 0px 12px;
+  color: #f3f3e0;
+  font-family: "Inter", Helvetica;
+  font-size: 27px;
+  font-weight: 700;
+  border-radius: 50px;
+  height: 56px;
+  width: 374px;
+  margin-bottom: -80px;
+  margin-top: 42px;
+}
+
+.movie-choice {
+  border-radius: 14px;
+  height: 192px;
+  width: 507px;
+  background-color: #f3f3e0;
+  box-shadow: 0px 4px 4px #00000040;
+  display: flex;
+  align-items: center;
+}
+
+.movie-info {
+  font-family: Montserrat, var(--default-font-family);
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 22px;
+}
+
+.movie-pic {
+  height: 155px;
+  object-fit: cover;
+  min-width: 158px;
+  border-radius: 25px;
+  border-color: #F3F3E0;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.movie-title {
+  white-space: nowrap;
+  color: black;
+  font-family: Amaranth, var(--default-font-family);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  text-wrap: wrap;
+}
+
+.movie-starring, .released-date {
+  color: black;
+  font-family: "Inter", Helvetica;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.review-button {
+  background-color: #b8001f;
+  border-radius: 50px;
+  height: 35px;
+  width: 164px;
+  letter-spacing: 0.80px;
+  text-align: center;
+  color: #F3F3E0;
+  font-family: "Montserrat", Helvetica;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  .review-button:hover{
+    background-color: #810218;
+    color: #d3d3be;
+    transition: 0.3s;
+  }
+  /*footer style*/
+.footer-container {
+  background-color: #f3f3e0;
+  height: 220px;
+  display: flex;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 16px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-top {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 1.20px;
+  margin-top: 11px;
+}
+
+.contact-footer {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.contact-button-footer {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 1.80px;
+  margin-right: 40px;
+}
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.fb-button, .insta-button, .twitter-button, .youtube-button {
+  width: 36px;
+  cursor: pointer;
+}
+
+.social-png {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-info {
+  color: black;
+  font-family: "Montserrat", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.20px;
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* animations */
+.prev-arrow.fade-in {
+  opacity: 1;
+}
+
+.prev-arrow.fade-out {
+  opacity: 0;
+}
+
+.body-container.fade {
+  opacity: 0;
+}
+
+.corner-images img.large {
+  transform: scale(1.0);
+  opacity: 1;
+}
+
+.corner-images img.small {
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+
+.corner-images img.fade-out {
+  opacity: 0;
+}
+
+.corner-images img.fade-in {
+  opacity: 1;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideOutToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.burger-menu {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  padding: 30px;
+  overflow: auto;
+  animation: slideInFromLeft 0.3s ease-out forwards;
+}
+
+.burger-menu.slide-out {
+  animation: slideOutToLeft 0.3s ease-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+.dropdown-content.hide {
+  animation: slideUp 0.3s ease-out forwards;
+}
+
+.dropdown.open .dropdown-content {
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+
+  html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+
+  .head-right .dropdown,
+  .head-right .about-button,
+  .head-right .contact-button,
+  .head-right .home-button {
+    display: none;
+  }
+
+  .head-right .burger {
+    display: block;
+    font-size: 42px;
+    transform: translate(-420px, 11px);
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .head-container {
+    height: 100px;
+  }
+
+  .head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+
+  .genres-button, .movies-button, .about-button, .contact-button, .home-button {
+    transform: translate(-9px, 25px);
+  }
+
+  .dropdown-content {
+    margin-top: 35px;
+    margin-bottom: -50px;
+    border-radius: 10px;
+  }
+
+  .logo {
+    font-size: 44px;
+    margin-top: -45px;
+    margin-left: 58px;
+  }
+
+  .logo-pic {
+    width: 35px;
+    transform: translate(-14px, -29px);
+  }
+
+  .head-bottom {
+    transform: translate(-420px, 17px);
+  }
+
+  .top-title {
+    font-size: 17px;
+    line-height: 15px;
+  }
+  
+  .top-title-info {
+    font-size: 10px;
+    margin-right: 6px;
+  }
+
+  .footer-container {
+    height: 330px;
+  }
+
+  .footer-top {
+    margin-top: 10px;
+    width: 360px;
+    font-size: 17px;
+    text-align: center;
+  }
+  
+  .footer-info {
+    width: 360px;
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+
+  .contact-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-button-footer {
+    margin-left: 46px;
+    text-wrap: nowrap;
+    font-size: 29px;
+    margin-top: 10px;
+  }
+
+  .fb-button, .insta-button, .twitter-button, .youtube-button {
+    width: 33px;
+  }
+
+  .social-media {
+    gap: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .body-container {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: 100%; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    grid-template-rows: repeat(30, 155px); 
+    margin-top: 100px;
+  }
+
+  .body-container > div {
+    margin: 0px 0px;
+  }
+
+  .movie-choice {
+    width: 90%;
+    min-height: 140px;
+    max-height: 140px;
+    border-radius: 15px;
+  }
+
+  .movie-info {
+    margin-left: 7px;
+    margin-right: 10px;
+    gap: 7px;
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .movie-title {
+    font-size: 16px;
+  }
+
+  .movie-pic {
+    height: 115px;
+    min-width: 117px;
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+
+  .movie-starring, .released-date {
+    font-size: 13px; 
+  }
+
+  .review-button {
+    height: 30px;
+    width: 80%;
+    font-size: 12px;
+    text-wrap: nowrap;
+  }
+
+  .top-button {
+    height: 40px;
+    width: 90%;
+    font-size: 19px;
+    margin-top: 30px;
+  }
+
+  .reviews-selection {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  #long-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: -5px;
+    font-family: Amaranth, var(--default-font-family);
+  }
+
+}

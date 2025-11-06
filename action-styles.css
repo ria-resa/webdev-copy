@@ -1,0 +1,314 @@
+body {
+    background-color: #1B1B1B;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.main-container {
+    background-color: #1B1B1B;
+    flex-direction: column;
+    align-items: center;
+}
+
+.moviegenre-container {
+    background-color: #000000;
+    width: 400px;
+    border-radius: 50px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #F3F3E0;
+    font-family: 'Inter', Helvetica;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    outline: 1px solid #F3F3E0;
+    margin-top: 20px;
+    transition: transform 0.2s;
+    cursor: pointer;
+    margin-left: 620px
+}
+
+    .moviegenre-container:hover{
+        background-color: #1a1a1a;
+        transform: scale(1.1);
+    
+    }
+
+.mainmovie-container {
+    background-color: #000000;
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 1250px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center; 
+    margin-top: 30px;
+}
+
+.movie-info {
+    max-width: 740px;
+    text-align: left;
+
+}
+.movie-photo {
+    border-radius: 25px;
+    align-items: center;
+    align-content: center;
+    margin-left: 5px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+    .movie-photo img {
+    width: 365px;
+    object-fit: contain;
+    border-radius: 25px;
+    }
+
+    .movie-photo:hover {
+        transform: scale(1.1);
+    }
+
+.babaeatbaril-movie-title {
+    font-family: 'Amaranth';
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;    
+    max-width: 400px;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.babaeatbaril-small-movie-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: normal;
+    color: #F3F3E0;
+    margin-left: 35px; 
+    margin-top: 5px;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.babaeatbaril-big-movie-text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    margin-left: 35px; 
+    margin-top: 20px;
+}
+
+    .babaeatbaril-small-movie-text, .babaeatbaril-big-movie-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+
+.button {
+    background-color: #4F75FF;
+    border-radius: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #F3F3E0;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-left: 30px; 
+    width: 300px;
+    text-wrap: nowrap;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    transition: transform 0.2s;
+}
+
+    .button:hover{
+        background-color: #4F75FF;
+        transform: scale(1.1);
+    
+    }
+
+.buybust-movie-title {
+    font-family: 'Amaranth';
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;    
+    max-width: 400px;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    cursor: pointer;
+    margin-top: -4px;
+}
+    
+.buybust-small-movie-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: normal;
+    color: #F3F3E0;
+    margin-left: 35px; 
+    margin-top: 5px;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+}
+    
+.buybust-big-movie-text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    margin-left: 35px; 
+     margin-top: 20px;
+}
+    
+.buybust-small-movie-text, .buybust-big-movie-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+.arisaka-movie-title {
+    font-family: 'Amaranth';
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;    
+    max-width: 400px;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    margin-top: -8px;
+    cursor: pointer;
+}
+    
+.arisaka-small-movie-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: normal;
+    color: #F3F3E0;
+    margin-left: 35px; 
+    margin-top: 5px;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+}
+    
+.arisaka-big-movie-text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    margin-left: 35px; 
+     margin-top: 20px;
+}
+    
+.arisaka-small-movie-text, .arisaka-big-movie-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+.respeto-movie-title {
+    font-family: 'Amaranth';
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 30px;    
+    max-width: 400px;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    cursor: pointer;
+    margin-top: -10px;
+}
+    
+.respeto-small-movie-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: normal;
+    color: #F3F3E0;
+    margin-left: 35px; 
+    margin-top: 5px;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+}
+    
+.respeto-big-movie-text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    margin-left: 35px; 
+     margin-top: 20px;
+}
+    
+.respeto-small-movie-text, .respeto-big-movie-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+
+.thetrigonal-movie-title {
+    font-family: 'Amaranth';
+    font-size: 46px;
+    font-weight: bold;
+    margin-left: 30px;    
+    max-width: 400px;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    cursor: pointer;
+    margin-top: -15px;
+}
+    
+.thetrigonal-small-movie-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight: normal;
+    color: #F3F3E0;
+    margin-left: 35px; 
+    margin-top: 5px;
+    text-wrap: wrap;
+    margin-bottom: 20px;
+}
+    
+.thetrigonal-big-movie-text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+    color: #F3F3E0;
+    text-wrap: nowrap;
+    margin-left: 35px; 
+     margin-top: 20px;
+}
+    
+.thetrigonal-small-movie-text, .thetrigonal-big-movie-text {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}

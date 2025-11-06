@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Discover the best Filipino movies through in-depth reviews, recommendations, and critiques. Celebrate Philippine cinema and explore its cultural and social significance with PHILikula."
+    />
+    <meta
+      name="keywords"
+      content="Filipino movies, Philippine cinema, movie reviews, PHILikula, Pinoy films, Filipino film recommendations, movie critiques, Philippine culture, classic Filipino movies, contemporary Filipino cinema"
+    />
+    <meta
+      name="audience"
+      content="Filipino movie enthusiasts, film critics, and students of Philippine cinema"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500;700&family=Zen+Tokyo+Zoo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>PHILiKula - Movie Review</title>
+    <link rel="stylesheet" href="other-style.css" />
+    <link rel="stylesheet" href="header-style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link rel="stylesheet" href="perMoviecopy.css" />
+  </head>
+  <body>
+    <!-- main from ivan starts here-->
+    <div class="main-container">
+      <div class="head-container">
+        <div class="head-top">
+          <div class="logo-container" title="PHILIKULA">
+            <div class="logo">
+              <span class="ph">PH</span><span class="il">IL</span
+              ><span class="ikula">iKula</span>
+
+              <div class="hamburger" onclick="toggleMenu()" title="MENUS"></div>
+            </div>
+
+            <div class="logo-pic">
+              <img
+                src="PHILIKULAPHOTOS/logo.png"
+                alt="Logo"
+                class="logo-icon"
+              />
+            </div>
+          </div>
+
+          <div class="head-right" id="pasaway">
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('genres')">
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div class="dropdown" tabindex="0" onclick="toggleMenu('movies')">
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT US">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+
+            <div class="burger">☰</div>
+
+            <div class="head-bottom">
+              <div class="top-title">MOVIE REVIEWS</div>
+
+              <div class="top-title-info">Your Guide to Filipino Movies</div>
+            </div>
+          </div>
+
+          <div class="burger-menu">
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('genres-dropdown')"
+            >
+              <div class="genres-button">GENRES</div>
+              <div class="dropdown-content" id="genres-dropdown">
+                <a href="ActionMovies.html" title="ACTION">ACTION</a>
+                <a href="ComedyMovies.html" title="COMEDY">COMEDY</a>
+                <a href="DramaMovies.html" title="DRAMA">DRAMA</a>
+                <a href="HistoryMovies.html" title="HISTORY">HISTORY</a>
+                <a href="HorrorMovies.html" title="HORROR">HORROR</a>
+                <a href="RomanceMovies.html" title="ROMANCE">ROMANCE</a>
+              </div>
+            </div>
+
+            <div
+              class="dropdown-button"
+              onclick="toggleMenu('movies-dropdown')"
+            >
+              <div class="movies-button">MOVIES</div>
+              <div class="dropdown-content" id="movies-dropdown">
+                <a href="all-reviews.html" title="ALL MOVIES">ALL MOVIES</a>
+                <a href="latest-reviews.html" title="LATEST MOVIES"
+                  >LATEST MOVIES</a
+                >
+                <a href="oldest-reviews.html" title="OLDEST MOVIES"
+                  >OLDEST MOVIES</a
+                >
+              </div>
+            </div>
+
+            <a href="AboutUs.html" title="ABOUT">
+              <div class="about-button">ABOUT</div>
+            </a>
+
+            <a href="ContactUs.html" title="CONTACT">
+              <div class="contact-button">CONTACT US</div>
+            </a>
+
+            <a href="index.html" title="HOME">
+              <div class="home-button">HOME</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- ivan head ends here -->
+
+      <!-- content starts here -->
+      <div class="content-container">
+        <div class="content">
+          <div class="poster-container">
+            <div class="poster">
+              <img
+                src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/plv85l002BHwPq7zvjceGt4h3nz.jpg"
+                alt="The Entitled Poster"
+                class="poster"
+              />
+            </div>
+          </div>
+          <div class="movie-details">
+            <h1 class="movie-title">THE ENTITLED</h1>
+            <span class="span-details"
+              ><i
+                ><span class="reds">RELEASED DATE: July 29, 2022</span>
+              </i></span
+            >
+            <h3 class="other-details1">
+              <span class="">STARRING:</span> &nbsp; Alex Gonzaga & JC De Vera
+            </h3>
+            <span class="span-details"
+              ><i
+                ><span class="">CAST:</span> &nbsp; Ara Mina, Johnny Revilla,
+                Melai Cantiveros, Andrea Abaya, Issa Litton, Tori Garcia,
+                Rolando Inocencio, Felix Petate, Skelly Clarkson, Kobie Brown,
+                Sela Guia, Zabel Lamberth, Louie Kim Sedukis, Marivic B. Ong, Ed
+                Delos Reyes, Humphrey Dela Cruz, Melinda Fabela, Vanny Fabela,
+                Bongjon Jose, Jorge Cabullo</i
+              ></span
+            >
+            <h3 class="other-details1">
+              <span class="">GENRE:</span> &nbsp; Comedy, Drama, & Romance
+            </h3>
+            <h3 class="other-details">
+              <span class="">RATINGS:</span> &nbsp; 41% Critique Reviews, 14%
+              Audience Reviews
+            </h3>
+            <h3 class="other-details1">
+              <span class="">DIRECTOR:</span>&nbsp; Theodore Boborol
+            </h3>
+            <h3 class="other-details">
+              <span class="">AUTHOR:</span>&nbsp; Noreen Capili
+            </h3>
+            <h3 class="other-details1"><span class="reds">OVERVIEW:</span></h3>
+            <span class="span-details"
+              ><i
+                >Unexpectedly dropped into upper-class society, an awkward woman
+                struggles to fit in.
+              </i></span
+            ><br />
+
+            <!-- experiment -->
+            <button class="watch-trailer-btn">WATCH TRAILER</button>
+            <div class="modal" id="trailerModal">
+              <div class="modal-content">
+                <button class="close-btn" id="closeModal">&times;</button>
+                <iframe
+                  id="youtubeVideo"
+                  src="https://www.youtube.com/embed/a6lHbot2lqU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <!-- experiment -->
+          </div>
+        </div>
+      </div>
+      <!-- content ends here -->
+
+      <!-- critic and reviews -->
+      <div class="criticAndrevs-container">
+        <div class="reviews-tabs">
+          <button class="tab-button" id="top-critics-tab">
+            TOP CRITIC REVIEWS
+          </button>
+
+          <button class="tab-button" id="audience-revs-tab">
+            AUDIENCE REVIEWS
+          </button>
+        </div>
+        <div class="reviews-content">
+          <!-- Top Critic Reviews content -->
+          <div class="tab-content" id="top-critics-content">
+            <!-- critic 1 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Brian Costello</p>
+                <span class="company">Common Sense Media</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  This is a crass comedy that gives new meaning to the word
+                  "sophomoric." The Entitled is a Filipino rags-to-riches/romcom
+                  that combines elements of, say, The Princess Diaries with more
+                  recent comedies that revel in gross-out humor and sex jokes.
+                </p>
+                <br />
+                <a
+                  href="https://www.commonsensemedia.org/movie-reviews/the-entitled"
+                  class="link-revs"
+                  target="_blank"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- crituc 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Radhika Menon</p>
+                <span class="company">Decider</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The Entitled spends so much time trying to draw parallels
+                  between poor people and bad behavior, but films don’t need to
+                  lean on the stereotype of poor people being uncouth... the
+                  stereotypes ultimately do a disservice to telling a full,
+                  unique story.
+                </p>
+                <br />
+                <a
+                  href="https://decider.com/2022/07/30/the-entitled-netflix-review/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">M.N. Miller</p>
+                <span class="company">Ready Steady Cut</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  The problem is that it is a cringe-comedy that wants to have
+                  its flatulence humor and not eat it too. Boborol tries to
+                  force down your throat a heartfelt narrative that is not
+                  earned.
+                </p>
+                <br />
+                <a
+                  href="https://readysteadycut.com/2022/07/30/review-the-entitled-2022-netflix-film/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 4 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Ending Spoilers</p>
+                <span class="company">DMT</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  And it is movies like “The Entitled” that make us understand
+                  why the world has started hating on rom-coms. It’s been almost
+                  20 years since “What a Girl Wants” first graced our screens.
+                  That movie was magical because it had a legitimate storyline,
+                  and the charm of the actors was apparent.
+                </p>
+                <br />
+                <a
+                  href="https://dmtalkies.com/the-entitled-ending-explained-2022-filipino-film-theodore-boborol/"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+
+            <!-- critic 5 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Anne Campbell</p>
+                <span class="company">Film Gate Reviews</span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Netflix has very few family-friendly foreign films, and for
+                  that reason The Entitled deserves its spot on the platform.
+                  The humour is immature but pre-teens should find it very
+                  enjoyable.
+                </p>
+                <br />
+                <a
+                  href="http://www.filmgatereviews.com/2022/07/the-entitled-movie-review.html"
+                  target="_blank"
+                  class="link-revs"
+                  ><p class="fullrevs">See Full Review</p></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Audience Reviews content -->
+          <div class="tab-content" id="audience-revs-content">
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Teneciorowena</p>
+                <span class="stars">
+                  <img
+                    src="assets/4_stars-removebg-preview.png"
+                    alt="4 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  If you're used to Alex Gonzaga's behavior, you will definitely
+                  not see her acting skill as "cringe". I rated it as 2, since
+                  her co-actors seems uncomfortable doing the scenes? I know
+                  that most of the cast have a lot of experience being an actor
+                  but here in this movie they seem like a rookie in acting
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 2 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Yaornw</p>
+                <span class="stars">
+                  <img
+                    src="assets/4_stars-removebg-preview.png"
+                    alt="4 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  This is a romantic comedy with a time worn plot but Gonzaga
+                  shines and is both funny and charming. There are several good
+                  performances, and genuine laughs and a bit of gross humor at
+                  times as well. Still, laugh out loud enjoyable comedic moments
+                  here, driven by a strong lead.
+                </p>
+              </div>
+            </div>
+
+            <!-- Audience Review 3 -->
+            <div class="critic-content-container">
+              <div class="critic-left-side">
+                <p class="name">Kirkylop</p>
+                <span class="stars">
+                  <img
+                    src="assets/4_stars-removebg-preview.png"
+                    alt="4 star ratings"
+                    class="star-rating"
+                  />
+                </span>
+              </div>
+              <div class="critic-right-side">
+                <p class="ebas">
+                  Filipino snowflakes and her very active haters wouldn't
+                  definitely like this movie. I assumed some of them are already
+                  here in the review section, trolling.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- experimetn sa tab switching -->
+
+      <!-- footer starts here -->
+      <div class="footer-container">
+        <div class="footer-top">
+          <i
+            >PHILikula is a movie review platform. We do not host or stream
+            movies.</i
+          >
+        </div>
+
+        <div class="contact-footer">
+          <div class="contact-button-footer">FOLLOW US</div>
+
+          <div class="social-media">
+            <div class="fb-button">
+              <a href="https://www.facebook.com/profile.php?id=61569535033596" target="_blank" title="Follow @Philukula on Facebook">
+                <img
+                  src="PHILIKULAPHOTOS/fb-icon.png"
+                  alt="FACEBOOK"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="insta-button">
+              <a href="https://www.instagram.com/philikula000/" target="_blank" title="Follow @Philukula on Instagram">
+                <img
+                  src="PHILIKULAPHOTOS/instanicon.png"
+                  alt="INSTAGRAM"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <div class="twitter-button">
+              <a href="https://x.com/PHILikula000" target="_blank" title="Follow @Philukula on Twitter">
+                <img
+                  src="PHILIKULAPHOTOS/twiticon.png"
+                  alt="TWITTER"
+                  class="social-png"
+                />
+              </a>
+            </div>
+
+            <!-- </a> -->
+
+            <div class="youtube-button">
+              <a href="https://www.youtube.com/channel/UCdBV9LTXTlPGjRaxHCYB9Qg" title="Follow @Philukula on Youtube">
+                <img
+                  src="PHILIKULAPHOTOS/yticon.png"
+                  alt="YOUTUBE"
+                  class="social-png"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-info">
+          Content © 2024 PHILikula. Some rights reserved. Linked content remains
+          the property of its respective owners.
+        </div>
+      </div>
+
+      <!-- footer ends here -->
+    </div>
+    <script src="burger.js"></script>
+    <script src="PHhomeScript.js"></script>
+  </body>
+</html>
